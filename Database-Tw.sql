@@ -58,7 +58,7 @@ VALUES
 (3, 5),
 
 
---Se pueden añadir constrains para hacer checks*/
+--Se pueden aÃ±adir constrains para hacer checks*/
 /*DELETE FROM followers
 WHERE follower_id = following_id;*/
 
@@ -77,12 +77,12 @@ VALUES
 SELECT  follower_id, following_id FROM followers;
 SELECT follower_id FROM followers WHERE following_id = 1;
 SELECT COUNT(follower_id) AS followers FROM followers WHERE following_id = 1
---Top 3 usuarios con mayor número de seguidores
+--Top 3 usuarios con mayor nÃºmero de seguidores
 SELECT TOP 3 following_id, COUNT(follower_id) AS followers --los 3 primeros! ACA SE USA TOP 3 
 FROM followers GROUP BY following_id
 ORDER BY followers DESC 
 /*SELECT ID,Nombre,Apellido,
-Correoelectrónico,AddressLine,Nota
+CorreoelectrÃ³nico,AddressLine,Nota
 FROM Empleado
 WHERE Nota is null
 ORDER BY ID
@@ -124,12 +124,12 @@ VALUES
 SELECT * FROM tweets;
 
 
---¿CUANTOS TWEETS HIZO UN USUARIO?
+--Â¿CUANTOS TWEETS HIZO UN USUARIO?
 
 SELECT user_id, COUNT(*) AS tweet_count FROM tweets GROUP BY user_id
  
 --SUBCONSULTA:
---Obtener los tweets de los usuarios que tienen más de 2 seguidores
+--Obtener los tweets de los usuarios que tienen mÃ¡s de 2 seguidores
 
 SELECT tweet_id, tweet_text, user_id 
 FROM tweets 
