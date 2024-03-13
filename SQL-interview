@@ -1,0 +1,326 @@
+What is SQL?
+-SQL= stands for Structured Query Language. It is a programming language used for managing and manipulating relational
+databases.
+
+-SQL = Structured Query Language (lenguaje de consulta estructurada), diseñado para administrar, consultar
+ sistemas de gestión de bases de datos.
+
+ What is a database?
+-A database is an organized collection of data stored and accessed electronicalli. It provides a way to sore, organize,
+and retrieve large amounts of data efficiently.
+
+-Una base de datos es una colección organizada de datos almacenada y accedida electrónicamente. Proporciona una forma 
+de almacenar, organizar y recuperar grandes cantidades de datos de manera eficiente.
+
+What is a primary key?
+-A primary key is a column or combination of columns that uniquely identifies each row in a table. It enforces
+the entity integrity rule in a relational database.
+
+-Una clave primaria es una columna o combinación de columnas que identifica de manera única cada fila en una tabla.
+Aplica la regla de integridad de entidad en una base de datos relacional.
+
+What is foreign key?
+
+-A foreign key is a column or combination of columns that establishes a link between data in two tables.
+It relationships between tables.
+
+-Una clave foránea es una columna o combinación de columnas que establece un vínculo entre datos en dos tablas.
+Establece relaciones entre tablas.
+
+What is the difference between a primary key and unique key?
+
+-A primary key is used to uniquely identify a row in a table and must have a unique value. On the other hand,
+a unique key ensures that a column or combination of columns has a unique values but does not necessarily identify the row.
+
+-Una clave primaria se utiliza para identificar de manera única una fila en una tabla y debe tener un valor único. 
+Por otro lado, una clave única asegura que una columna o combinación de columnas tenga valores únicos, pero no necesariamente
+identifica la fila.
+
+What is normalization?
+
+-Normalization is the process of organizin data in a database to minimize redundancy and dependency. It involves breaking
+down a table into smaller tables and establishing relationships between them.
+
+-La normalización es el proceso de organizar datos en una base de datos para minimizar la redundancia y la dependencia.
+Involucra descomponer una tabla en tablas más pequeñas y establecer relaciones entre ellas.
+
+What are the different types of normalization?
+
+-The different types of normalization are:
+First Normal Form (1FN)
+Second Normal Form(2NF)
+Third Normal Form(3NF)
+Boyce-Codd Normal Form(BCNF)
+Fourth Normal Form(4FN)
+Fifth Normal Form(5NF) or Project-Join normal Form(PJNF)
+
+What is a join in SQL?
+
+-A join is an operation used to combine rows from two or more tables based on related columns. It allows you to retrieve
+data from multiples tables simultaneously.
+
+-Una "join" es una operación utilizada para combinar filas de dos o más tablas basándose en columnas relacionadas. 
+Permite recuperar datos de múltiples tablas simultáneamente.
+
+What is the difference between DELETE and TRUNCATE in SQL?
+-The DELETE statement is used to remove specific rows from a table based on a condition. It can be rolled back and generates
+individual delete operations for each row.
+-TRUNCATE, on the other hand, is used to remove all rows from a table. It cannot be rolled back, and it is faster than DELETE 
+as it deallocates the data pages instead of logging individual row deletions.
+
+-La instrucción DELETE se utiliza para eliminar filas específicas de una tabla según una condición. 
+Puede revertirse (rollback) y genera operaciones de eliminación individuales para cada fila.
+-Por otro lado, TRUNCATE se utiliza para eliminar todas las filas de una tabla. No se puede revertir, y 
+es más rápido que DELETE ya que desasigna las páginas de datos en lugar de registrar las eliminaciones de filas individuales.
+
+What is the difference between UNION and UNION ALL?
+-UNION and UNION ALL are used to combine the result sets of two or more SELECT statements.
+UNION remove duplicates rows from the combined result set.
+whereas UNION ALL includes all rows, including duplicates.
+
+-UNION elimina las filas duplicadas del conjunto de resultados combinado, proporcionando un conjunto de valores distintos.
+-UNION ALL incluye todas las filas del conjunto de resultados combinado, incluyendo duplicados. 
+No elimina las filas duplicadas y generalmente es más rápido que UNION porque no necesita realizar el 
+paso adicional de identificar y eliminar duplicados.
+
+What is the difference between the HAVING clause and the WHERE clause?
+
+-The WHERE clause is used to filter rows based on a condition before the data is grouped or aggregated. It operates on 
+individual rows.
+The HAVING clause, on the other hand, is used to filter grouped rows based on a condition after the data ir groupued or aggregated
+using the GROUP BY clause
+
+-La cláusula WHERE se utiliza para filtrar filas basadas en una condición antes de que los datos sean agrupados o agregados.
+Opera en filas individuales y se usa típicamente en conjunto con las declaraciones SELECT, UPDATE o DELETE.
+
+Por otro lado, la cláusula HAVING se utiliza para filtrar filas agrupadas basadas en una condición después de que
+los datos han sido agrupados o agregados utilizando la cláusula GROUP BY. Está diseñada específicamente para su uso con
+funciones de agregación como SUM, COUNT, AVG, etc. La cláusula HAVING filtra los resultados del agrupamiento, permitiéndote
+aplicar condiciones al resultado de las funciones de agregación.
+
+What is a transaction in SQL?
+
+-A transaction is a sequence of SQL statements that are executed ad a single logical unit of work. It ensures data consistency
+and integrity by either committing all changes or rolling them back if an error occurs.
+
+-Una transacción es una secuencia de declaraciones SQL que se ejecutan como una sola unidad lógica de trabajo.
+Asegura la consistencia e integridad de los datos al confirmar todos los cambios o revertirlos si se produce un error.
+
+What is the difference between a clustered and a non-clustered index?
+
+-A clustered index determines the physical order of data in a table. It changes the way the data is stored on disk and can
+be creater on only one column. A table can have only one clustered index.
+A non-clustered index does not affect the physical order of data in a table. It is stores separately and contains a ponter to
+the actual data. A table can have multiple non-clustered indexes.
+
+-Un índice agrupado determina el orden físico de los datos en una tabla. Cambia la forma en que los datos se almacenan en
+el disco y solo se puede crear en una columna. Una tabla puede tener solo un índice agrupado.
+Un índice no agrupado no afecta el orden físico de los datos en una tabla. Se almacena por separado y contiene un puntero
+a los datos reales. Una tabla puede tener múltiples índices no agrupados.
+
+What is ACID in the context of database transactions?
+
+-ACID stands for Atomicity, Consistency, Isolation and Durability. It is a set of properties that guarantee reliable processing
+of database transactions.
+
+-Atomicity: ensures that a transaction is treated as a single unit of work, either all or none of the changes are applied.
+-Consistency: ensures that a transaction brings the database from one valid state to another.
+-Insolation: ensures that concurrent transactions do not interfere with each other.
+-Durability: ensures that once a transaction is committed, its changes are permanent and survive system failures.
+
+-ACID significa Atomicidad, Consistencia, Aislamiento y Durabilidad. Es un conjunto de propiedades que garantizan el 
+procesamiento confiable de transacciones de bases de datos.
+
+-Atomicidad: asegura que una transacción se trate como una unidad única de trabajo, aplicando todos los cambios o ninguno.
+-Consistencia: asegura que una transacción lleve la base de datos de un estado válido a otro.
+-Aislamiento: asegura que las transacciones concurrentes no interfieran entre sí.
+-Durabilidad: asegura que una vez que una transacción se ha confirmado, sus cambios son permanentes y sobreviven a fallos 
+del sistema.
+
+What is a deadlock?
+
+-A deadlock occurs when two or more transactions are waiting for each other to release resources, resulting in a circular 
+dependecy. As a result, none of the transactions can be proceed, and the system may become unresponsive.
+
+-Se produce un bloqueo (deadlock) cuando dos o más transacciones están esperando a que la otra libere recursos, 
+lo que resulta en una dependencia circular. Como resultado, ninguna de las transacciones puede continuar, y el sistema 
+puede volverse no receptivo.
+
+What is the difference between a database and schema?
+
+-A database is a container that holds multiples objects, such as tables, views, indexes, and procedures. It represents a logical
+grouping of related data.
+A Schema, on the other hand, is a container within a database that holds object and defines their ownership. It provides a way
+to organize and manage database objects.
+
+-Una base de datos es un contenedor que alberga múltiples objetos, como tablas, vistas, índices y procedimientos.
+Representa un agrupamiento lógico de datos relacionados.
+Por otro lado, un esquema (schema) es un contenedor dentro de una base de datos que alberga objetos y define
+su propiedad. Proporciona una forma de organizar y gestionar objetos de la base de datos.
+
+
+What is the difference between a temporary table and a table variable?
+
+-A temporary table is a table that is created and exists only for the duration of a session or transaction. It can be 
+esplicitly dropped or is automatically dropped when the session or transaction ends.
+A table variable is a variable that can store a table-like structure in memory. It has a limited scope within a batch,
+stored procedure, or function. It is automatically deallocated when the scope ends.
+
+-Una tabla temporal es una tabla que se crea y existe solo durante la duración de una sesión o transacción.
+	Puede ser eliminada explícitamente o se elimina automáticamente cuando la sesión o transacción finaliza.
+-Una variable de tabla es una variable que puede almacenar una estructura similar a una tabla en la memoria.
+	Tiene un alcance limitado dentro de un lote (batch), procedimiento almacenado o función. Se libera automáticamente 
+	cuando finaliza el alcance.
+
+What is the purpose of the GROUP BY clause?
+
+-The GROUP BY clause is used to group rows based on one or more columns in a table. It is typically used in conjunction
+with aggregate functions, such as SUM, AVG, COUNT, etc. to perform calculations on grouped data.
+
+-La cláusula GROUP BY se utiliza para agrupar filas basadas en una o más columnas en una tabla. 
+Se utiliza típicamente en conjunto con funciones de agregación, como SUM, AVG, COUNT, etc., para realizar 
+cálculos sobre datos agrupados.
+
+What is the difference between CHAR and VARCHAR data types?
+
+-CHAR is a fixed-lenght string data type, while VARCHAR is a variable-length string data type
+
+What is a stored procedure?
+
+-A stored procedure is a set of SQL statements that are stored in the database and can be executed repeatedly. It provides 
+code reusability and better performance.
+
+What is a subquery?
+
+-A subquery is a query nested inside another query. It is used to retrieve data based on the resuld of an inner query.
+
+What is a view?
+
+-A view is a virtual table based on the result of an SQL statement. It allows users to retireve and manipulate data as if
+
+What is the difference between a cross join and an inner join?
+
+-A cross join(cartesian product) returns the combination of all rows from two or more tables.
+An inner join return only the matching rows based on a join condition.
+
+What is the purpose of the COMMIT statement?
+
+-The COMMIT statement is used to save changes made in a transaction permanently. It ends the transactions and makes the changes 
+visible to other users.
+
+What is the purpose of the ROLLBACK statement?
+
+-The ROLLBACK statement is used to undo changes made in a transaction. It reverts the database to its previous state before the
+transaction started.
+
+What is the purpose of the NULL value in SQL?
+
+-Null represent the absence of value or unkown value. It is different from zero or an empty string and requires special handling in 
+SQL queries.
+
+What is the difference between a view and a materialized view?
+
+-A materialized view is a physical copy of the view's result set stored in the database, which is update periodically.
+It improves query performance at the cost of data freshness.
+
+What is a correlated subquery?
+
+-A correlated subquery is a subquery that refers to a column from the outer query. It executes once for each row processed
+by the outer query.
+
+What is the purpose of the DISTINCT keyword?
+
+-The DISTINCT keyword is used to retrieve unique values from a column or comobination of columns in a SELECT statement.
+
+What is the difference between the CHAR and VARCHAR data types?
+
+-CHAR stores fixed-length character strings, while VARCHAR stores variable-length character strings. The storage size of CHAR is 
+constant, while VARCHAR adjusts dynamically.
+
+
+What is the difference between in the IN and EXIST operators?
+
+-The IN operator checks for a value within a set of values or the result of a subquery. The EXIST operator checks for the 
+existence of rows returned by subquery.
+
+What is the purpose of the TRIGGER statement?
+
+-The TRIGGER statement is used to associate a set of SQL statements with a specific event in the database. It is executed 
+automatically when the event occurs.
+
+What si the difference between a unique constraint and unique index?
+
+-A unique constraint ensures the uniqueness of values in one or more columns, while a unique index enforces the uniqueness
+and also improves query performance.
+
+What is the purpose of the TOP or LIMIT cluase?
+
+-The TOP (in SQL Server) or LIMIT (in MySQL) clause is used to limit the number of rows returned by a query. It is often
+used with an ORDER BY clause.
+
+What is the difference between the UNION and JOIN operators?
+
+-UNION combines the result sets of two or more SELECT statements vertically, while JOIN combines columns from two or more tables
+horizontally based on a join condition.
+
+What is a data warehouse?
+
+-A data warehouse is a large, centralized repository that stores and manages data from various soruces.
+It is designed for efficent reporting, analysis, and business intelligence purpose.
+
+What is the difference between a primary key and a candidate key?
+
+-A primary key is a chosen candidate key that uniquely identifies a row in a table.
+A candidate key is a set one or more columns that could potentially become the primary key.
+
+What is the purpose of the GRANT statement?
+
+-The GRANT statement is used to grant specific permissions or privileges to users or roles in a database.
+
+What is a correlated update?
+
+-A correlated update is an update statement that refers to a column from the same table in a subquery. It updates values
+based on the result of subquery for each row.
+
+What is the purpose of the CASE statement?
+
+-The CASE statement is used to perform conditional logic in SQL queries. It allows you to return different values based on specified
+conditions.
+
+What is the purpose of the COALESCE function?
+
+-The COALESCE function returns the first non-null expression from a list of expressions. It is often used to handle null values
+effectively.
+
+What is the difference between a natural join and inner join?
+
+-A natural join is an inner join that matches rows based on columns with the same name in the joined tables. It is automatically
+determiden by the database.
+
+What is the purpose of the CASCADE DELETE constraint?
+
+-The CASCADE DELETE constraint is used to automatically detele related rows in child tables when a row in the parent
+table is deleted.
+
+What is the difference between the EXIST and NOT EXIST operators?
+
+-The EXIST operator return true if a subquery returns any rows, while the NOT EXIST operator returns true if a subquery
+returns no rows.
+
+Why are SQL functions used?
+
+-SQL functions are used for the following purposes:
+	To perform some calculations on the data
+	To modify individual data items
+	To format dates and numbers
+	To convert the data types
+
+
+
+
+
+
+
+
+
+

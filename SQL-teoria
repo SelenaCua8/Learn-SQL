@@ -1,7 +1,0 @@
-SQL = Structured Query Language (lenguaje de consulta estructurada), diseñado para administrar, consultar
- sistemas de gestión de bases de datos.
-Base de datos relacional! (no sql son no relacionales = tiene colecciones de documentos) = se utilizan las 
-relacionales para evitar la duplicidad de los datos, es 
-más óptimo, relaciones para evitar la duplicidad de los datos.
-tablas =  entidades y las entidades tienen atributos
-Se crean relaciones con otras tablas 
