@@ -1,0 +1,109 @@
+1-¿Con que sentencia puedo crear una table
+
+CREATE TABLE
+
+2-¿Con que sentencia puedo eliminar una table?
+
+DROP TABLE
+
+3-¿Con que sentencia puede insertar datos en una tabla?
+
+INSERT INTO
+
+4-¿Actualización de una tabla?
+
+UPDATE SET
+
+5-¿Eliminar datos de una tabla?
+
+DELETE FROM ... WHERE...
+
+6-¿Para que sirve el where?
+
+Para hacer una condición, ejemplo WHERE name = Victor
+
+7-¿Como hacer una clave ajena o foranea?
+
+Constraint .... foreing key .. references
+
+8-¿Que es una clave primaria?
+
+Campo que identifica a un registro de esa tabla, dato mas importante/columna mas importante dentro de una tabla 
+
+9-¿Como sacarias el primer registro que se creo dentro de una tabla?
+
+order by ASC(mas bajo al mas alto) Con limit 1(mySql) o TOP 1(SQL server)
+
+10-¿Group by?
+Sirve para agrupar filas o un dato en concreto, ejemplo edad y agrupa la consulta con todos los usuarios de la misma edades
+
+11-¿Diferencia de una subconsulta y consulta multitaria o join?
+
+La subconsulta no saca informacion de la otra tabla que saco la consulta, sino que utilizo un dato de esa tabla para hacer una condicion
+en mi consulta principal y asi filtrar cierta informacion
+join: muestro datos de varias tablas
+
+12-¿Cuales son las diferencias entre los comandos delete y truncate?
+
+El comando DELETE cuando se acompaña de un where elimina una fila de tablas, mientras que TRUNCATE elimina todas
+también otra diferencia cuando usas DELETE si algo sale mal puedes realizar un retroceso de datos en cambio TRUNCATE
+no lo permite
+
+13-¿Cual es la diferencia entre un procedimiento almacenado y una función SQL?
+
+Los procedimientos almacenados y las funciones son componentes de código que podemos utilizar el SQL SERVER para crear rutinas,
+las diferencias que hay entre ellas son:
+
+Las funciones siempre retornan un valor, mientras que un procedimiento almacenado puede que retorne un valor o puede que no lo haga.
+Los procedimientos almacenados pueden ser invocados desde el entorno de desarrollo, pero las funciones no.
+Las funciones de hecho no pueden ser invocadas por si solas, mientras que los procedimientos almacenas sí. Para invocar una función,
+esta debe estar dentro de una consulta.
+
+14- Menciona 2 buenas prácticas al escribir queries en SQL
+
+evitar utilizar select *
+cuando trabajamos con queries ya que hace que obliga almotor a la metadata de la base d datos y consultar
+cuales osn las columnas que tiene esa tabla y luego devolverlas, entonces esta haciendo un querie adicional y aparte estamos
+devolviendo todas las columnas (escenario poco comun), siempre vamos a necesitar ciertas columnas lo ideal es especificar
+
+select distinc forma util de poder eliminar duplicados y limpiar consulta, tiene alto costo de procesamiento y 
+puede relentizar nuestros queries
+
+
+15-¿Que son los Triggers?
+
+Procedimientos almacenados que se utilizan para crear una respuesta a una acción específica realizada en la tabla, como INSERT,
+UPDATE o DELETE. Puede invocar desencadenadores explicitamente en la base de datos.
+
+16-¿Como se puede mejorar el rendimiento de un querie?
+
+Algunas buenas prácticas para mejorar el rendimiento son:
+1.SELECCIONAR campos en ludar de usar SELECT *
+2. Crear índices correctamente
+3. Utilizar las tablas temporales con prudencia
+4. Evitar el uso de COUNT()
+5. Evitar el uso de caracteres comodín al comienzo del patrón LIKE
+
+17-¿Que és auto-increment?
+Función qu eopera en tipo de datos númerios, automaticamente incremetar la secuencia de los registros de los datos que tiene
+esta columna en particular que tiene esta caracteristica, lo hace de manera automatica siguiendo la secuencia.
+
+18-¿Cuales son los comandos de DDL y DML?
+Data Definition Language: PErmite llevar a cabo operaciones como, crear, borrar, alterar.
+Data Manipulation Language: Ayuda a insertar, actualizar, borrar y recuperar datos de una base de datos.
+Data Control Language: Permite controlar el acceso a la base de datos. Puede conceder o revocar el acceso.
+
+19-¿Cuales son los tipos de uniones en SQL?
+Las uniones en SQL se utilizan cuando se intenta utilizar datos de dos o más tablas al mismo tiempo. 
+
+Inner Join(unión interna)
+Inner Right
+Inner Left
+Full outer join
+
+20-¿Qué son las inyecciones en SQL y como se puede evitar?
+Una inyección SQL es un tipo de ciberataque que utilizan los hackers para insertar código SQL malicioso en la base de datos
+a fin de obtener acceso a información potencialmente valiosa o confidencial. Es muy común en aplicaciones o sitios web que utilizan
+bases de datos SQL.
+Para evitarlo, puedes crear varias cuentas de base de datos para limitar el acceso o usar un firewall de aplicaciones web de terceros,
+usar ORM o librerías para este propósito.
