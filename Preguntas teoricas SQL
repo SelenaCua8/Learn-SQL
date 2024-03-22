@@ -107,3 +107,8 @@ a fin de obtener acceso a información potencialmente valiosa o confidencial. Es
 bases de datos SQL.
 Para evitarlo, puedes crear varias cuentas de base de datos para limitar el acceso o usar un firewall de aplicaciones web de terceros,
 usar ORM o librerías para este propósito.
+
+
+///////// DESCRIBIR UNA TABLA EN SQL 
+
+EXEC sp_columns 'orders';
