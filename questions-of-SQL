@@ -1,0 +1,268 @@
+1. ¿Qué es un sistema de gestión de bases de datos relacionales?
+
+Un sistema de gestión de bases de datos relacionales (SGBDR) hace referencia al software utilizado para almacenar, gestionar y consultar datos.
+Los datos se guardan en tablas y se pueden vincular a otros conjuntos de datos a partir de información compartida (por eso son “relacionales”).
+
+2. ¿Cuál es la diferencia entre un sistema de gestión de bases de datos relacionales y un sistema de gestión de bases de datos?
+
+Estas son las diferencias principales entre un sistema de gestión de bases de datos relacionales (SGBDR) y un sistema de gestión de bases de datos (SGBD):
+
+Un SGBDR almacena datos en una tabla relacional con filas y columnas, mientras que un SGBD los almacena como un archivo.
+
+Un SGBDR ofrece acceso a varios usuarios (incluso en interacciones del extremo cliente-servidor), mientras que un SGBD solo admite un usuario.
+
+3. ¿Cuáles son los sistemas de gestión de bases de datos relacionales más usados?
+
+Estos son algunos de los SGBDR más usados:
+
+Oracle Database
+
+MySQL
+
+Microsoft SQL Server
+
+PostgreSQL
+
+IBM DB2
+
+SQLite
+
+4. ¿Qué función cumple SQL?
+
+SQL es un lenguaje de programación utilizado para llevar a cabo tareas relacionadas con los datos.
+Es el lenguaje de programación estándar de todos los SGBDR. En estas bases de datos, SQL permite a los usuarios crear tablas, actualizar datos, realizar consultas y llevar a cabo análisis.
+
+5. ¿Cuál es la diferencia entre SQL y MySQL?
+
+SQL es el lenguaje de programación que se utiliza en los SGBDR, mientras que MySQL es un ejemplo de un SGBDR. MySQL fue uno de los primeros sistemas de base de datos con código abierto en el mercado y continúa vigente al día de hoy.
+
+6. ¿Cómo se crea una tabla en SQL?
+
+El comando CREATE TABLE se utiliza para crear una tabla nueva en un SGBDR. El usuario debe indicar el nombre de la tabla, los nombres de las columnas y los tipos de datos. También sirve para crear copias de tablas ya implementadas.
+
+7. ¿Cómo se insertan fechas en SQL?
+
+Con SQL, el tipo de datos DATE se utiliza para almacenar datos o valores de tiempo en una base de datos. El formato para insertar fechas puede variar de un SGBDR a otro (por lo general, se usa AAAA-MM-DD).
+
+8. ¿Qué es una consulta?
+
+Una consulta es una solicitud de datos o información que se envía a una base de datos. Hay dos tipos importantes de consultas SQL:
+
+Una consulta de selección es una consulta que agrupa datos de una tabla con fines analíticos.
+
+Una consulta de acción es una consulta que cambia los contenidos de la base de datos a partir de criterios indicados.
+
+9. ¿Qué es una subconsulta?
+
+Una subconsulta es una consulta anidada en otro enunciado que requiere varios pasos. La subconsulta ofrece a la consulta principal información adicional necesaria para ejecutar una tarea (por ejemplo, cuando una consulta depende de los resultados de otra).
+
+10. ¿Cómo se ejecuta una consulta de selección en SQL?
+
+Este es el proceso para ejecutar una consulta de selección en SQL:
+
+El enunciado SELECT se utiliza para especificar las columnas que necesitas consultar.
+
+El enunciado FROM se utiliza para especificar la tabla que contiene los datos.
+
+El enunciado WHERE se utiliza para filtrar los datos en función de ciertas condiciones.
+
+11. ¿Cuáles son los tipos de consultas de acción más importantes?
+
+Hay varios enunciados SQL que ejecutan consultas de acción. Sus objetivos y procedimientos varían de una a otra. Estas son algunas de las consultas de acción más importantes:
+
+UPDATE modifica el valor de los campos de una tabla.
+
+DELETE elimina registros de una tabla.
+
+CREATE TABLE crea una tabla nueva.
+
+INSERT INTO añade registros a la tabla.
+
+12. ¿Qué son las restricciones?
+
+En SQL, las restricciones son un conjunto de reglas o condiciones implementadas en un SGBDR para especificar los datos que se pueden insertar,
+actualizar o eliminar en las tablas. El objetivo es garantizar la integridad de los datos y asegurarse de que la información almacenada en las tablas de la base de datos sea precisa.
+
+13. ¿Qué son las operaciones de combinación JOIN?
+
+Estas operaciones combinan columnas con valores relacionados de dos o más tablas para crear una tabla nueva. En SQL, hay cuatro tipos de operaciones JOIN importantes:
+
+JOIN devuelve registros cuyos valores coinciden en ambas tablas.
+
+LEFT JOIN devuelve todos los registros de la tabla izquierda y los registros coincidentes de la tabla derecha.
+
+RIGHT JOIN devuelve todos los registros de la tabla derecha y los registros coincidentes de la tabla izquierda.
+
+FULL JOIN devuelve todos los registros de ambas tablas.
+
+14. ¿Qué función cumplen los índices?
+
+Un índice de SQL almacena partes importantes de una tabla para que las búsquedas sean más ágiles y eficaces.
+En lugar de buscar en toda la base de datos, los usuarios solo deberán consultar el índice cuando necesiten obtener datos. Por lo tanto, los índices mejoran el rendimiento de los SGBDR.
+
+15. ¿Qué representa el valor NULL?
+
+El valor NULL indica que el dato es desconocido. No es lo mismo que 0; si aparece un valor NULL, significa que no hay datos almacenados.
+
+16. ¿Cuáles son los distintos tipos de comandos SQL?
+
+
+En SQL, los comandos se utilizan para llevar a cabo tareas específicas en la base de datos. Hay cinco tipos importantes:
+
+Los comandos de lenguaje de definición de datos (Data Definition Language, DDL) cambian la estructura de la base de datos.
+
+Los comandos de lenguaje de manipulación de datos (Data Manipulation Language, DML) modifican los datos en las tablas de la base de datos.
+
+Los comandos de lenguaje de control de datos (Data Control Language, DCL) gestionan el acceso de los usuarios a la base de datos.
+
+Los comandos de lenguaje de control de transacciones (Transaction Control Language, TCL) gestionan las transacciones que realizan los comandos DML.
+
+Los comandos de lenguaje de consultas de datos (Data Query Language, DQL) recuperan información de la base de datos.
+
+17. ¿Qué es un alias?
+
+Un alias es un nombre temporal que se le asigna a una tabla o columna durante una consulta SQL. Su objetivo es disminuir la cantidad de código necesario para la consulta, y, de este modo, ahorrar tiempo y reducir la carga de trabajo.
+
+18. ¿Cuáles son algunas de las funciones de agregamiento más importantes?
+
+Los valores agregados se utilizan para efectuar cálculos en un conjunto de valores a fin de obtener un solo valor. Estas son algunas de las funciones de agregamiento más usadas:
+
+AVG calcula el promedio de los valores.
+
+COUNT cuenta la cantidad total de filas en una tabla.
+
+MIN encuentra el valor mínimo en una tabla.
+
+MAX encuentra el valor máximo en una tabla.
+
+SUM calcula la suma de los valores.
+
+19. ¿Qué son las propiedades ACID en SQL?
+
+ACID es el acrónimo de atomicidad, coherencia, aislamiento y durabilidad. Estas propiedades son fundamentales para garantizar la integridad de los datos durante una transacción.
+
+Función de cada propiedad:
+
+Atomicidad: los cambios en los datos se realizan en una única operación unificada.
+
+Coherencia: los valores de los datos son coherentes al comienzo y al final de la transacción.
+
+Aislamiento: una transacción no puede ver el estado intermedio de otra transacción.
+
+Durabilidad: los cambios en los datos sobreviven a la transacción.
+
+20. ¿Cuál es el significado de la clave principal en SQL?
+Una clave principal es una columna (o un conjunto de columnas) que permite que cada fila de una base de datos se identifique de forma única. Las bases de datos SQL dan mucha importancia a las claves primarias.
+Proporcionan a cada fila en una tabla de base de datos una identificación única. Una clave principal puede constar de uno o más campos, y solo puede haber una clave principal por tabla.
+
+21. ¿Qué son los tipos de datos SQL?
+Un tipo de datos es un atributo que describe el tipo de datos que un objeto puede almacenar, como cadenas binarias, datos numéricos, datos de caracteres, datos financieros, etc.ate y datos de tiempo, etc.
+
+En SQL, los tipos de datos son catedivididos en los siguientes grupos:
+
+Números exactos
+Aproximadoate numéricos
+Date y tiempo
+Cadenas de caracteres
+Cadenas de caracteres Unicode
+cadenas binarias
+
+22. ¿Dónde se almacenan los nombres de usuario y las contraseñas en SQL Server?
+Los nombres de usuario y las contraseñas se almacenan en los principales sys.server de la tabla SQL y en los inicios de sesión de sys.sql, respectivamente. Las contraseñas no se almacenan en texto normal.
+
+23. ¿NULL es igual a 0 en SQL?
+Un valor NULL en SQL denota un valor que no está disponible o no está asignado. Un espacio (' ') o zero (0) no son equivalentes al valor NULL. No puede comparar el valor NULL con ningún otro valor utilizando operadores de comparación 
+como "=" o ">" ya que no puede ser igual o desigual a ningún otro valor.
+
+24. Analice la diferencia entre SQL y PL/SQL.
+SQL y PL/SQL difieren en sus enfoques de manipulación de bases de datos. SQL es un lenguaje declarativo para bases de datos relacionales, mientras que PL/SQL es un lenguaje de procedimientos que utiliza SQL para operaciones de bases de datos.
+
+PL/SQL incluye variables y estructuras de control y puede ejecutar múltiples operaciones a la vez, lo que reduce el tráfico de la red. SQL está limitado a operaciones únicas. PL/SQL ofrece datos de alta velocidad processing, del cual SQL carece.
+
+25. Mencionar los diferentes tipos de relaciones en SQL. 
+Imagine que tiene un modelo de datos con tablas y estas tablas están conectadas o related entre sí. A menudo verás líneas que los conectan. Estas líneas representan los tipos de relaciones entre las tablas.
+
+Hay tres tipos principales de relaciones:
+
+🔷 Uno a muchos: Este es el tipo más común. Imagine que tiene una lista de clientes y cada cliente está asociado.ated con una ciudad. Una ciudad puede tener muchos clientes, pero cada cliente pertenece a una sola ciudad.
+
+🔷 Muchos a muchos: Este tipo se utiliza cuando ambas tablas pueden tener múltiples entradas en ambos lados. Por ejemplo, piense en los empleados que llaman a los clientes. Un empleado puede llamar a muchos clientes y un cliente puede recibir
+llamadas de muchos empleados. Cuando tienes "muchos" en ambos lados, es una relación de muchos a muchos. Para manejar esto, a menudo necesitas una nueva tabla en el medio.
+
+🔷 Programa XNUMX a XNUMX: Esto rara vez se usa pero tiene su lugar. Imagine que desea almacenar los datos de los empleados y sus documentos de identidad válidos. Cada empleado tiene un solo documento de identidad válido y cada documento de identidad
+pertenece a un solo empleado. Es una relación uno a uno. Puede almacenar los datos del documento de identidad en un lugar separado.ate mesa y relate ellos usando una clave externa.
+
+26. ¿Cómo se elimina el duplicado?ate rows en SQL? 
+Al trabajar con bases de datos SQL, puede encontrar duplicadosate rows en vuestras mesas. Esto puede suceder incluso si sigue las mejores prácticas, como el uso de índices y claves primarias. Este artículo analizará diferentes métodos para eliminar duplicados.ate rows
+de una tabla SQL.
+
+Usando la cláusula GROUP BY y HAVING
+Identificar duplicadosate rows utilizando la cláusula GROUP BY.
+Utilice COUNT para comprobar si hay duplicadosate ocurrencias.
+Eliminar duplicadoates manteniendo solo una instancia de cada uno.
+Uso de expresiones de tabla comunes (CTE)
+Utilice la función ROW_NUMBER() en un CTE.
+Los datos de partición se basan en columnas específicas.
+Eliminar duplicadoates donde el número de fila es greater que 1.
+Uso de la función RANGO
+Utilice RANK() con la cláusula PARTITION BY.
+Asigne identificaciones únicas a rows independientemente del duplicidadates.
+Borrar rows con rangos greater que 1.
+Usando el paquete SSIS
+Los servicios de integración de SQL Server (SSIS) pueden automatizarate duplicidadate eliminación.
+Ordene datos utilizando un operador de clasificación en SSIS.
+Habilite la opción “Eliminar rows con duplicoate opción ordenar valores”.
+Almacene los datos limpios en una tabla de destino.
+Es importante tener precaución al aplicar estos métodos a los datos de producción. Pruébelos siempre en un entorno seguro antes de usarlos con datos en vivo.
+
+Entonces, cuando estés diseñando una base de datos, entiendeandiCombinar estos tipos de relaciones le ayuda a decidir cómo estructurar sus tablas y sus conexiones de forma eficaz. Es como descubrir cómo encajan las piezas de un rompecabezas para 
+representar con exactitud los datos del mundo real.ately.
+
+27. ¿Cuáles son algunas funciones SQL que se utilizan para manipular mayúsculas y minúsculas? 
+SQL proporciona varias funciones que le permiten manipularate mayúsculas y minúsculas en cadenas. Algunas funciones SQL comunes para manipular mayúsculas y minúsculas incluyen:
+
+SUPERIOR(): Esta función convierte todos los caracteres de una cadena a mayúsculas.
+
+SELECT UPPER('Hello World') AS UppercaseResult;
+
+Salida: "HELLO WORLD"
+
+MÁS BAJO(): Esta función convierte todos los caracteres de una cadena a minúsculas.
+
+SELECT LOWER('Hello World') AS LowercaseResult;
+
+Salida: "hello world"
+
+INITCAP(): Esta función pone en mayúscula la primera letra de cada palabra en una cadena.
+
+SELECT INITCAP('hello world') AS InitCapResult;
+
+Salida: "Hello World"
+
+Estas funciones son útiles para formatear y presentar datos de texto de manera coherente y legible en consultas e informes SQL.
+
+28. Analice la diferencia entre CHAR y VARCHAR. 
+Char y Varchar son tipos de datos en SQL que se utilizan para almacenar cadenas de caracteres, pero tienen características distintas:
+
+Tipo de datos Char(n):
+
+Almacena cadenas de caracteres de longitud fija.
+Requiere una longitud especificada (n) para cada valor almacenado.
+Utiliza una ubicación de memoria estática.
+Cada carácter ocupa 1 byte de almacenamiento.
+Adecuado cuando la longitud de la cuerda es conocida y consistente.
+Varchar(n) Tipo de datos:
+
+Almacena cadenas de caracteres de longitud variable.
+Permite diferentes longitudes de cadena hasta una longitud máxima especificada (n).
+Utiliza asignación de memoria dinámica.
+Requiere extra bytes (típicoally 2) para almacenar información de longitud.
+apropiadoate cuando las longitudes de las cuerdas varían.
+Diferencias:
+
+Char es para cadenas de longitud fija, mientras que Varchar es para cadenas de longitud variable.
+Char usa memoria estática, mientras que Varchar usa memoria dinámica.
+Char requiere 1 byte por carácter, mientras que Varchar usa 1 byte por carácter más bytes adicionales para la longitud.
+Char se adapta a situaciones con longitudes de cuerda consistentes, mientras que Varchar es flexible para diferentes longitudes.
+En resumen, Char es como un rígido. box para tus cuerdas, siempre del mismo tamaño, mientras que Varchar es como una banda elástica, que se adapta a diferentes longitudes según sea necesario.
+
